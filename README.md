@@ -44,3 +44,13 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Gallery
+
+     
+![image](https://github.com/Devollox/moderm-website/assets/122895078/bb72433d-4457-4bbb-b6d1-6da97de8cb80)
+     
+![image](https://github.com/Devollox/moderm-website/assets/122895078/73a1970e-b598-48ad-a2f0-7cd44061daed)
+     
+![image](https://github.com/Devollox/moderm-website/assets/122895078/61aee7c3-7390-4ee9-a3b8-4bb9378f5e4c)
+
