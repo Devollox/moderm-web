@@ -1,0 +1,23 @@
+.footer {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.wrapper_footer:first-child {
+    margin: 0px;
+}
+.wrapper_footer {
+    color: var(--colors-secondary);
+    display: flex;
+    font-size: 15px;
+    border: 0px;
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: color var(--transitions-duration) ease-in-out;
+}
+.wrapper_footer:hover {
+    color: var(--fg);
+}

@@ -1,0 +1,54 @@
+@media (min-width: 760px) {
+    .main {
+        width: 800px;
+    }
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+.main {
+    align-items: center;
+    display: flex;
+    margin: 0px auto;
+    padding: var(--space-navHeightMobile) 0;
+    overflow: hidden;
+    flex: 1 1 0%;
+}
+.button {
+    padding: 10px;
+    appearance: none;
+    background: transparent;
+    border: 0px;
+    border-radius: var(--radii-borderRadius);
+    color: var(--fg);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    outline: 0px;
+    text-decoration: none;
+    transition: background var(--transitions-duration) ease-in-out, color var(--transitions-duration) ease-in-out;
+}
+
+.button svg {
+    margin-left: 5px;
+}
+.wrapper_main {
+    font-size: 16px;
+    line-height: 32px;
+    background: var(--bg);
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    padding: 20px 0px;
+}
+.wrapper_text {
+    margin: 0px auto;
+    max-width: 760px;
+    padding: 0px 20px;
+}

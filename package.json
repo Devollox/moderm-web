@@ -1,0 +1,82 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint . && prettier --write '**/*.js' --loglevel warn",
+    "dev": "next -p 3000",
+    "build": "yarn rss && next build",
+    "rss": "node lib/rss",
+    "new": "node lib/db"
+  },
+  "pre-commit": "lint",
+  "license": "MIT",
+  "dependencies": {
+    "@reach/auto-id": "^0.8.6",
+    "@reach/dialog": "^0.10.5",
+    "classnames": "^2.2.6",
+    "clsx": "^2.1.1",
+    "cmdk": "^0.0.4",
+    "copy-to-clipboard": "^3.3.3",
+    "intersection-observer": "^0.7.0",
+    "lodash.debounce": "^4.0.8",
+    "lucide-react": "^0.376.0",
+    "match-sorter": "^4.0.2",
+    "next": "^14.2.3",
+    "next-themes": "^0.0.8",
+    "nprogress": "^0.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-intersection-observer": "^8.24.2",
+    "swr": "^0.2.0",
+    "use-delayed-render": "^0.0.7",
+    "usehooks-ts": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/body-scroll-lock": "^3.1.2",
+    "@types/classnames": "^2.2.10",
+    "@types/lodash.debounce": "^4.0.6",
+    "@types/match-sorter": "^6.0.0",
+    "@types/node": "20.12.7",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-transition-group": "^4.2.4",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "babel-eslint": "^10.0.2",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "eslint": "^9.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "gray-matter": "^4.0.2",
+    "lowdb": "^7.0.1",
+    "marked": "^1.1.0",
+    "next-unused": "^0.0.3",
+    "open-graph-scraper": "^3.6.2",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-hover-media-feature": "^1.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.18.2",
+    "prism-react-renderer": "^1.1.1",
+    "prompts": "^2.2.1",
+    "rss": "^1.2.2",
+    "typescript": "^5.4.5"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "next-unused": {
+    "alias": {
+      "@components": "components/",
+      "@data": "data/",
+      "@lib": "lib/",
+      "@styles": "styles/"
+    },
+    "include": [
+      "components",
+      "lib"
+    ]
+  }
+}
