@@ -1,0 +1,19 @@
+{
+  "schema": [
+    {
+      "name": "trance",
+      "color": "green"
+    },
+    {
+      "name": "house",
+      "color": "blue"
+    },
+    {
+      "name": "other",
+      "color": "indigo"
+    }
+  ],
+  "data": [
+
+  ]
+}

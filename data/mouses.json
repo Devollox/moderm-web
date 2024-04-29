@@ -1,0 +1,25 @@
+{
+  "schema": [
+    {
+      "name": "60%",
+      "color": "blue"
+    },
+    {
+      "name": "65%",
+      "color": "red"
+    },
+    {
+      "name": "TKL",
+      "color": "blue-gray"
+    }
+  ],
+  "data": [
+    {
+      "title": "Delux M800 Pro",
+      "description": "Delux M800 Pro Black",
+      "image": "https://www.techpowerup.com/review/delux-m800-pro-highspeed/images/sideangle2.jpg",
+      "url": "https://aliexpress.ru/item/1005004218291461.html",
+      "key": "PAW3370 "
+    }
+  ]
+}

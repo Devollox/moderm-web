@@ -1,0 +1,18 @@
+{
+  "schema": [
+    {
+      "name": "website",
+      "color": "blue"
+    },
+    {
+      "name": "brand",
+      "color": "red"
+    },
+    {
+      "name": "portfolio",
+      "color": "indigo"
+    }
+  ],
+  "data": [
+
+  ]}
