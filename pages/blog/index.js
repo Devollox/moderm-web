@@ -2,6 +2,7 @@ import React from 'react'
 import Page from '@components/page'
 import PostsList from '@components/posts-list'
 import getPosts from '@lib/get-posts'
+import renderRSS from '@lib/rss'
 
 
 const Blog = ({ posts }) => {

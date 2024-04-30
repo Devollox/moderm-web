@@ -19,7 +19,6 @@ import '@styles/global.css'
 import { ThemeProvider } from 'next-themes'
 import Footer from '@components/footer'
 
-
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider defaultTheme="system">

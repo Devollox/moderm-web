@@ -3,8 +3,16 @@ import styles from '@components/home/page.module.css'
 import React, { useLayoutEffect } from 'react'
 import Command from '@components/command'
 import getPosts from '@lib/get-posts'
+import generateRssFeed from '@lib/rss'
+import path from 'path'
 
-export const getStaticProps = () => { const posts = getPosts(); return { props: { posts } }}
+export const getStaticProps = async () => {
+  await getPosts();
+  await generateRssFeed();
+  const data = {}
+
+  return { props: { data } }
+}
 const About = () => {
   return (
     <>
