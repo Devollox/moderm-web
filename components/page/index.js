@@ -2,6 +2,7 @@ import Head from '@components/head'
 import Header from '@components/header'
 import styles from './page.module.css'
 
+
 const Page = ({
                 header = true,
                 footer = true,
@@ -11,6 +12,7 @@ const Page = ({
                 showHeaderTitle = true,
                 children
               }) => {
+
   return (
     <div className={styles.wrapper}>
       <Head
@@ -24,7 +26,5 @@ const Page = ({
     </div>
   )
 }
-setTimeout(() => {
 
-}, 1000)
 export default Page

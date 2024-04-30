@@ -30,7 +30,7 @@ import {
   Lightbulb,
   ArrowRight,
   GitHub,
-  Twitter
+  Twitter, Mic, Play
 } from '@components/icons'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
@@ -278,6 +278,19 @@ const DefaultItems = () => {
           keybind="c"
           callback={() =>
             copy("https://devollox.fun/")
+          }
+        />
+        <Item
+          value="RSS"
+          icon={<RSS />}
+          callback={() => router.push('/feed.xml')}
+        />
+        <Item
+          value="Source Code"
+          icon={<Play />}
+          keybind="s"
+          callback={() =>
+            window.open('https://github.com/Devollox/moderm-website', '_blank')
           }
         />
         <Item value="Home" icon={<ArrowRight />} keybind="g h" />
