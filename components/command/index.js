@@ -39,6 +39,8 @@ import tinykeys from '@lib/tinykeys'
 import postMeta from '@data/blog.json'
 import clsx from 'clsx'
 import Heart from '@components/icons/heart'
+import { Pi } from 'lucide-react'
+import Pin from '@components/icons/pin'
 
 const CommandData = React.createContext({})
 const useCommandData = () => React.useContext(CommandData)
@@ -283,11 +285,12 @@ const DefaultItems = () => {
         <Item
           value="RSS"
           icon={<RSS />}
+          keybind="r"
           callback={() => router.push('/feed.xml')}
         />
         <Item
           value="Source Code"
-          icon={<Play />}
+          icon={<Pin />}
           keybind="s"
           callback={() =>
             window.open('https://github.com/Devollox/moderm-website', '_blank')
