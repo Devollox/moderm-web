@@ -1,10 +1,10 @@
 import Page from '@components/page'
 import Entry from '@components/entry/text'
-
-// Data
 import useData from '@lib/use-data'
 import { data } from '@data/reading.json'
+import getPosts from '@lib/get-posts'
 
+export const getStaticProps = () => { const posts = getPosts(); return { props: { posts } }}
 const Reading = () => {
   const { items } = useData(data)
 

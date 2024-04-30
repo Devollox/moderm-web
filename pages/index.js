@@ -1,20 +1,11 @@
 import Page from 'components/home'
 import styles from '@components/home/page.module.css'
-import { ArrowRight as LogoIcon, Command as CommandIcon } from '@components/icons'
 import React, { useLayoutEffect } from 'react'
 import Command from '@components/command'
+import getPosts from '@lib/get-posts'
 
+export const getStaticProps = () => { const posts = getPosts(); return { props: { posts } }}
 const About = () => {
-
-  useLayoutEffect(() => {
-
-    document.addEventListener('keydown', function(event) {
-      if (event.ctrlKey && event.key === 'k') {
-        event.preventDefault()
-      }
-    })
-  }, [])
-
   return (
     <>
       <Page
@@ -43,6 +34,7 @@ const About = () => {
         <Command />
       </Page>
     </>
+
   )
 }
 

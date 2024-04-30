@@ -3,7 +3,6 @@ import Router from 'next/router'
 import nprogress from 'nprogress'
 import debounce from 'lodash.debounce'
 
-
 const start = debounce(nprogress.start, 500)
 Router.events.on('routeChangeStart', start)
 Router.events.on('routeChangeComplete', () => {
@@ -20,6 +19,7 @@ import '@styles/global.css'
 import { ThemeProvider } from 'next-themes'
 import Footer from '@components/footer'
 
+
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider defaultTheme="system">
@@ -28,5 +28,4 @@ function MyApp({ Component, pageProps }) {
     </ThemeProvider>
   )
 }
-
 export default MyApp

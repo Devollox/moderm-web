@@ -1,6 +1,8 @@
 import Page from '@components/page'
 import Entry from '@components/entry'
+import getPosts from '@lib/get-posts'
 
+export const getStaticProps = () => { const posts = getPosts(); return { props: { posts } }}
 const Projects = () => {
   return (
     <Page title="Projects" description="Collection of past and present work.">
@@ -15,5 +17,6 @@ const Projects = () => {
     </Page>
   )
 }
+
 
 export default Projects

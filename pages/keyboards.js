@@ -1,8 +1,9 @@
 import Page from '@components/page'
 import Entry from '@components/entry'
-
 import { data as items } from '@data/keyboards.json'
+import getPosts from '@lib/get-posts'
 
+export const getStaticProps = () => { const posts = getPosts(); return { props: { posts } }}
 const Keyboards = () => {
   return (
     <Page
@@ -26,5 +27,6 @@ const Keyboards = () => {
     </Page>
   )
 }
+
 
 export default Keyboards

@@ -11,7 +11,6 @@ export const getStaticProps = ({ params: { slug } }) => {
   const postIndex = posts.findIndex(p => p.slug === slug)
   const post = posts[postIndex]
   const { body, ...rest } = post
-
   return {
     props: {
       previous: posts[postIndex + 1] || null,
