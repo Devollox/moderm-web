@@ -1,8 +1,5 @@
 type KeyBindingPress = [string[], string]
 
-/**
- * A map of keybinding strings to event handlers.
- */
 export interface KeyBindingMap {
   [keybinding: string]: (event: KeyboardEvent) => void
 }
@@ -11,22 +8,10 @@ export interface Options {
   ignoreFocus?: boolean
 }
 
-/**
- * These are the modifier keys that change the meaning of keybindings.
- *
- * Note: Ignoring "AltGraph" because it is covered by the others.
- */
 let KEYBINDING_MODIFIER_KEYS = ['Shift', 'Meta', 'Alt', 'Control']
 
-/**
- * Keybinding sequences should timeout if individual key presses are more than
- * 1s apart.
- */
 let TIMEOUT = 1000
 
-/**
- * When focus is on these elements, ignore the keydown event.
- */
 let inputs = ['select', 'textarea', 'input']
 
 /**
@@ -51,57 +36,23 @@ function parse(str: string): KeyBindingPress[] {
     })
 }
 
-/**
- * This tells us if a series of events matches a key binding sequence either
- * partially or exactly.
- */
 function match(event: KeyboardEvent, press: KeyBindingPress): boolean {
-  // prettier-ignore
+
   return !(
-		// Allow either the `event.key` or the `event.code`
-		// MDN event.key: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
-		// MDN event.code: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code
 		(
 			press[1].toUpperCase() !== event.key.toUpperCase() &&
 			press[1] !== event.code
 		) ||
-
-		// Ensure all the modifiers in the keybinding are pressed.
 		press[0].find(mod => {
 			return !event.getModifierState(mod)
 		}) ||
 
-		// KEYBINDING_MODIFIER_KEYS (Shift/Control/etc) change the meaning of a
-		// keybinding. So if they are pressed but aren't part of this keybinding,
-		// then we don't have a match.
 		KEYBINDING_MODIFIER_KEYS.find(mod => {
 			return !press[0].includes(mod) && event.getModifierState(mod)
 		})
 	)
 }
 
-/**
- * Subscribes to keybindings.
- *
- * Returns an unsubscribe method.
- *
- * @example
- * ```js
- * import keybindings from "../src/keybindings"
- *
- * keybindings(window, {
- * 	"Shift+d": () => {
- * 		alert("The 'Shift' and 'd' keys were pressed at the same time")
- * 	},
- * 	"y e e t": () => {
- * 		alert("The keys 'y', 'e', 'e', and 't' were pressed in order")
- * 	},
- * 	"$mod+d": () => {
- * 		alert("Either 'Control+d' or 'Meta+d' were pressed")
- * 	},
- * })
- * ```
- */
 export default function keybindings(
   target: Window | HTMLElement,
   keyBindingMap: KeyBindingMap,
@@ -115,16 +66,10 @@ export default function keybindings(
   let timer: any = null
 
   let onKeyDown = (event: KeyboardEvent) => {
-    // Ignore modifier keydown events
-    // Note: This works because:
-    // - non-modifiers will always return false
-    // - if the current keypress is a modifier then it will return true when we check its state
-    // MDN: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState
     if (event.getModifierState(event.key)) {
       return
     }
 
-    // Ignore event when a focusable item is focused
     if (options.ignoreFocus) {
       if (document.activeElement) {
         if (

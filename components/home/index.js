@@ -13,7 +13,7 @@ const Home = ({
         image={image}
       />
 
-      {header && <Header title={showHeaderTitle && title} variant="true" />}
+      {header && <Header title={showHeaderTitle && title} variant="true" variantKey="true" />}
       <main className={styles.main}>{children}</main>
     </div>
   </>)

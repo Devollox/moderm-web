@@ -27,7 +27,7 @@ const Header = ({ title, content, variant}) => {
                 </a>
               </Link>
 
-                <Command variantStyle="true" variant={<CommandIcon />} />
+                <Command variantStyle="true" variantKey="true" variant={<CommandIcon />} />
 
               {title && <div className={styles.content}>{title}</div>}
             </div>

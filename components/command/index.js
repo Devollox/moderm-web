@@ -45,7 +45,7 @@ import Pin from '@components/icons/pin'
 const CommandData = React.createContext({})
 const useCommandData = () => React.useContext(CommandData)
 
-const CommandMenu = memo(({variant, variantStyle}) => {
+const CommandMenu = memo(({variant, variantStyle, variantKey}) => {
   const listRef = useRef()
   const commandRef = useRef()
   const router = useRouter()
@@ -92,19 +92,22 @@ const CommandMenu = memo(({variant, variantStyle}) => {
     }
   }, [router, setPages])
 
+  if (variantKey === 'true') {
+    useEffect(() => {
+      const unsubs = [
+        tinykeys(window, keymap, { ignoreFocus: true }),
+        tinykeys(window, { '$mod+k': () => setOpen(o => !o) })
+      ]
+      return () => {
+        unsubs.forEach(unsub => unsub())
+      }
+
+    }, [keymap])
+  }
+
+
 
   useEffect(() => {
-    const unsubs = [
-      tinykeys(window, keymap, { ignoreFocus: true }),
-      tinykeys(window, { '$mod+k': () => setOpen(o => !o) })
-    ]
-    return () => {
-      unsubs.forEach(unsub => unsub())
-    }
-  }, [keymap])
-
-  useEffect(() => {
-
     if (commandRef.current) {
       commandRef.current.style.transform = 'scale(0.99)'
       commandRef.current.style.transition = 'transform 0.1s ease'
