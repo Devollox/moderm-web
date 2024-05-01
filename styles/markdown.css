@@ -29,8 +29,6 @@ article [id]::before {
   visibility: hidden;
 }
 
-/* Lists */
-
 article ul {
   padding: 0;
   list-style-position: inside;
@@ -55,8 +53,6 @@ article ul li.reset .check {
   align-items: center;
   margin-right: 0.51rem;
 }
-
-/* Checkbox */
 
 input[type='checkbox'] {
   vertical-align: middle;
@@ -92,15 +88,12 @@ input[type='checkbox']:focus {
   border-color: var(--fg);
 }
 
-/* Code Snippets */
-
 .token-line:not(:last-child) {
   min-height: 1.4rem;
 }
 
 article *:not(pre) > code {
   font-weight: 600;
-  font-family: var(--font-sans);
   font-size: 1rem;
   padding: 0 3px;
 }
@@ -121,13 +114,10 @@ article pre {
   font-size: 0.875rem;
 }
 
-/* Linkable Headers */
-
 .header-link {
   color: inherit;
   text-decoration: none;
 }
-
 .header-link::after {
   opacity: 0;
   content: '#';
