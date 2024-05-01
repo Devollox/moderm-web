@@ -68,7 +68,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: var(--fonts-body);
 }
 ::-webkit-scrollbar {
   width: 0px;
