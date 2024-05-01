@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "lint": "eslint . && prettier --write '**/*.js' --loglevel warn",
-    "dev": "next -p 3002",
+    "dev": "next -p 3000",
     "build": "next build",
     "new": "node lib/db"
   },
