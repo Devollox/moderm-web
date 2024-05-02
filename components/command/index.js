@@ -266,7 +266,6 @@ const DefaultItems = () => {
       <Group title="Collection">
         <Item value="Keyboards" icon={<M6 />} keybind="g k" />
         <Item value="Reading" icon={<Book />} keybind="g r" />
-        // <Item value="Projects" icon={<Document />} keybind="g p" />
       </Group>
 
       <Group title="Navigation">
