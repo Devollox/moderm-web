@@ -43,12 +43,12 @@
   margin-right: var(--gap-half);
 }
 @media (max-width: 960px) {
-  .nav_page {
+  .nav_page, .nav_homepage {
     margin: var(--gap) 0;
   }
 }
 @media (min-width: 960px) {
-  .nav_page {
+  .nav_page, .nav_homepage {
     margin: var(--gap-double) 0;
   }
 }
