@@ -29,7 +29,7 @@ export const ThemeProvider = ({ children }) => {
 };
 ```
 
-But... This is not what I expected, on the old site where `React` was used, this code worked 100% and I expected the same thing, but as we know `Next,js` is a northern framework, and it works very poorly with `HTML` and that’s why I went to look for libraries.
+But... This is not what I expected, on the old site where `React` was used, this code worked 100% and I expected the same thing, but as we know `Next.js` is a northern framework, and it works very poorly with `HTML` and that’s why I went to look for libraries.
 
 I found `Next-Theme`. The code, of course, was really incomprehensible, and I began to study it. I needed to link it to the CMDK.
 
