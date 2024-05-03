@@ -14,6 +14,26 @@
     }
   ],
   "data": [
-
+    {
+      "title": "Komarovo (DVRST Phonk Remix)",
+      "description": "DVRST, Игорь Скляр (Igor Sklyar) & Atomic Heart",
+      "image": "https://images.genius.com/ae1c17c62cc49895075fe3bd4414e018.1000x1000x1.jpg",
+      "url": "https://www.youtube.com/watch?v=ZcA5bdy-htc&ab_channel=SAIRUSMUSIC",
+      "key": "other"
+    },
+    {
+      "title": "Shut the Fuck Up",
+      "description": "Ghostface Playa feat. Pharmacist",
+      "image": "https://i1.sndcdn.com/artworks-mmlH4chJSg3MD8Ky-5nbhxg-t1080x1080.jpg",
+      "url": "https://soundcloud.com/ghostfaceplaya/shut-the-fuck-up-feat",
+      "key": "other"
+    },
+    {
+      "title": "Bullet in My Head Ghostface",
+      "description": "Playa feat. BLXCKBUSTA",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZTNhV8vX6WnMcNy3_WMZn0U6VpHHRRV2-hJ7k7_NPxA&s",
+      "url": "https://soundcloud.com/ghostfaceplaya/bullet-in-my-head-feat",
+      "key": "other"
+    }
   ]
 }
