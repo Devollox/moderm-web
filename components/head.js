@@ -9,7 +9,7 @@ const useCurrentPath = () => useRouter().asPath.split("?")[0];
 
 const Head = ({
   title = 'Devollox',
-  description = "Hi, I'm Devollox. Frontend developer.",
+  description = "Hi, I'm Devollox. Front-end & Technical semi-engineer.",
   image = defaultOgImage,
   children
 }) => {
@@ -42,8 +42,7 @@ const Head = ({
       {/* URL */}
       <meta name="og:url" content="https://devollox.fun" />
       <link key="canonical" rel="canonical" href={BASE_URL + path} />
-
-
+      
       {/* General */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
