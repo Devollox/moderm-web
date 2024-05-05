@@ -14,5 +14,16 @@
     }
   ],
   "data": [
-    
+    {
+      "title": "Draw Bézier curve with React and SVG",
+      "description": "How to Draw S-Curved Arrows Between Boxes / Rectangles.",
+      "url": "https://dragonman225.js.org/curved-arrows.html",
+      "key": "blog"
+    },
+    {
+      "title": "MASM Assembly Language",
+      "description": "MASM Assembly Language Task and Exercises.",
+      "url": "https://al.cs.msu.ru/system/files/MASM2020.pdf",
+      "key": "pdf"
+    }
   ]}
