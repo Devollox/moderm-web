@@ -1,6 +1,6 @@
 ---
 title: Next.js Theme
-description: Switch theme next.js 14.0
+description: Switch theme Next.js 14.0
 slug: nextjs-theme
 date: April 29, 2024
 ---
