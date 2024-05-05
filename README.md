@@ -15,7 +15,13 @@ This project is a constant work in progress, so if you find any bugs, typos or o
     Fork or clone this project from Github to get your own copy of it.
 
 1.  **Installation**
-
+   
+    If you do not have a yarn selected, then install it first
+   
+     ```sh
+     npm install --global yarn
+     ```
+     
     Once this is installed you can run `yarn install` in your project directory to install dependencies.
 
     ```sh
