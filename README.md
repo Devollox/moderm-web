@@ -16,7 +16,7 @@ This project is a constant work in progress, so if you find any bugs, typos or o
 
 1.  **Installation**
    
-    If you do not have a yarn selected, then install it first
+    If you do not have a yarn selected, then install it first.
    
      ```sh
      npm install --global yarn
