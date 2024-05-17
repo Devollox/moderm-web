@@ -275,29 +275,6 @@ const DefaultItems = () => {
           keybind="t"
           closeOnCallback={false}
         />
-
-        <Item
-          value="Copy Link"
-          icon={<Heart />}
-          keybind="c"
-          callback={() =>
-            copy("https://devollox.fun/")
-          }
-        />
-        <Item
-          value="RSS"
-          icon={<RSS />}
-          keybind="r"
-          callback={() => router.push('/feed.xml')}
-        />
-        <Item
-          value="Source Code"
-          icon={<Pin />}
-          keybind="s"
-          callback={() =>
-            window.open('https://github.com/Devollox/moderm-website', '_blank')
-          }
-        />
         <Item value="Home" icon={<ArrowRight />} keybind="g h" />
       </Group>
 
