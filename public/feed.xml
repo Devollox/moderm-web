@@ -1,1 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Devollox]]></title>
+        <description><![CDATA[Devollox]]></description>
+        <link>https://devollox.fun/</link>
+        <image>
+            <url>https://github.com/Devollox/Devollox-Website/blob/main/public/logo512.png</url>
+            <title>Devollox</title>
+            <link>https://devollox.fun/</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sat, 18 May 2024 20:38:44 GMT</lastBuildDate>
+        <atom:link href="https://devollox.fun/feed.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[Moving from React to Next.js]]></title>
+            <description><![CDATA[<p>Ohh.... Where do I want to start? Oh, yes... Why did I rewrite my site to <code>Next.js</code>. Next.js I chose for a reason, I have already written one website on it, and I liked its architecture. <code>SSR</code> - is probably the thing that attracted me.</p>
+<p>Server rendering (SSR, from English server side rendering) is the generation of the HTML code of the entire page on the server in response to a request. It avoids additional data requests from the client and provides fast first rendering and first meaningful rendering. 
+As you might understand, writing a website on the server side is much more difficult, you don&#39;t have a <code>document</code> as such. You have to get around using <code>useEffect</code> and stuff like that.</p>
+<pre><code class="language-javascript">export const getStaticProps = async () =&gt; {
+  await getPosts()
+  await generateRssFeed()
+  const data = {}
 
+  return { props: { data } }
+}
+</code></pre>
+<p>One example is <code>SSR</code>. Sometimes I think that&#39;s why it&#39;s so complicated. Who does not know that in order for this method to work, you need to return some kind of props.</p>
+<p><code>getStaticProps</code></p>
+<blockquote>
+<p>If you export a function called getStaticProps (Static Site Generation) from a page, Next.js will pre-render this page at build time using the props returned by getStaticProps.</p>
+</blockquote>
+<p><code>getStaticPaths</code></p>
+<blockquote>
+<p>If a page has Dynamic Routes and uses getStaticProps, it needs to define a list of paths to be statically generated.
+When you export a function called getStaticPaths (Static Site Generation) from a page that uses dynamic routes, Next.js will statically pre-render all the paths specified by getStaticPaths.</p>
+</blockquote>
+<p><code>getServerSideProps</code></p>
+<blockquote>
+<p>getServerSideProps is a Next.js function that can be used to fetch data and render the contents of a page at request time.</p>
+</blockquote>
+<p>All these tools allow you to create and implement ideas on the server side.</p>
+<p>It is more difficult, of course, but not more difficult than Dark souls 3. Another reason for choosing <code>SEO</code> is optimization. And Router pages. I think I will continue to study Next.js .</p>
+]]></description>
+            <link>https://devollox.fun/blog/nextjs-react</link>
+            <guid isPermaLink="false">https://devollox.fun/blog/nextjs-react</guid>
+            <dc:creator><![CDATA[Devollox]]></dc:creator>
+            <pubDate>Tue, 30 Apr 2024 21:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Next.js Theme]]></title>
+            <description><![CDATA[<p>To change the theme on this site, I went through many libraries. First I wrote this script:</p>
+<pre><code class="language-javascript">import React, { createContext, useEffect } from &quot;react&quot;;
+import { useLocalStorage } from &quot;../hooks/useLocalStorage&quot;;
+
+export const ThemeContext = createContext();
+
+export const ThemeProvider = ({ children }) =&gt; {
+  const [theme, setTheme] = useLocalStorage(&quot;theme&quot;, &quot;light&quot;);
+
+  useEffect(() =&gt; {
+    if (theme === &quot;dark&quot;) document.body.classList.add(&quot;dark&quot;);
+    else document.body.classList.remove(&quot;dark&quot;);
+  }, [theme]);
+
+  return (
+    &lt;ThemeContext.Provider value={[theme, setTheme]}&gt;
+      {children}
+    &lt;/ThemeContext.Provider&gt;
+  );
+};
+</code></pre>
+<p>But... This is not what I expected, on the old site where <code>React</code> was used, this code worked 100% and I expected the same thing, but as we know <code>Next.js</code> is a northern framework, and it works very poorly with <code>HTML</code> and that’s why I went to look for libraries.</p>
+<p>I found <code>Next-Theme</code>. The code, of course, was really incomprehensible, and I began to study it. I needed to link it to the CMDK.</p>
+<pre><code class="language-javascript">import { ThemeProvider } from &#39;next-themes&#39;
+
+function MyApp({ Component, pageProps }) {
+  return (
+    &lt;ThemeProvider defaultTheme=&quot;system&quot;&gt;
+      &lt;Component {...pageProps} /&gt;
+      &lt;Footer/&gt;
+    &lt;/ThemeProvider&gt;
+  )
+}
+
+export default MyApp
+</code></pre>
+<p>This is the only component that binds the <code>data-theme</code>, gives it some name, and we add the address itself to the css.</p>
+<pre><code class="language-css">[data-theme=&#39;light&#39;] {
+    --bg: #fff;
+    --fg: #000;
+    --gray: #888;
+    --light-gray: #dedede;
+    --lighter-gray: #f5f5f5;
+    --lightest-gray: #fafafa;
+    --article-color: #212121;
+    --gray-bg: #00000;
+    --kbd-bg: #fffff;
+    --header-bg: rgba(255, 255, 255, 0.8);
+    --gray-alpha: rgba(19, 20, 21, 0.5);
+    --selection: rgba(0, 0, 0, 0.99);
+
+    --token: #666;
+    --comment: #999;
+    --keyword: #000;
+    --name: #333;
+    --highlight: #eaeaea;
+}
+</code></pre>
+<p>After studying the library, I made the following code, which I linked to a button in the CMDK.</p>
+<pre><code class="language-javascript">const ThemeItems = () =&gt; {
+  const { theme: activeTheme, themes, setTheme } = useTheme()
+  const { setOpen } = useCommandData()
+
+  return themes.map(theme =&gt; {
+    if (theme === activeTheme) return null
+    return (
+      &lt;Item
+        value={theme}
+        key={`theme-${theme}`}
+        callback={() =&gt; {
+          setTheme(theme)
+          setOpen(false)
+        }}
+      &gt;
+        {theme}
+      &lt;/Item&gt;
+    )
+  })
+}
+
+...
+&lt;Item
+  value=&quot;Themes&quot;
+  icon={&lt;Sparkles /&gt;}
+  keybind=&quot;t&quot;
+  closeOnCallback={false}
+/&gt;
+...
+</code></pre>
+<p>The code works, I have no complaints, so to speak, there were problems with displaying the default theme, but this was quickly fixed.</p>
+]]></description>
+            <link>https://devollox.fun/blog/nextjs-theme</link>
+            <guid isPermaLink="false">https://devollox.fun/blog/nextjs-theme</guid>
+            <dc:creator><![CDATA[Devollox]]></dc:creator>
+            <pubDate>Sun, 28 Apr 2024 21:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

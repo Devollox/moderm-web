@@ -3,7 +3,7 @@ import cn from 'classnames'
 import { useRouter } from 'next/router'
 import useDelayedRender from 'use-delayed-render'
 import { DialogContent, DialogOverlay } from '@reach/dialog'
-import { useCopyToClipboard } from 'usehooks-ts'
+
 import {
   Command,
   CommandInput,
@@ -38,9 +38,6 @@ import { useTheme } from 'next-themes'
 import tinykeys from '@lib/tinykeys'
 import postMeta from '@data/blog.json'
 import clsx from 'clsx'
-import Heart from '@components/icons/heart'
-import { Pi } from 'lucide-react'
-import Pin from '@components/icons/pin'
 
 const CommandData = React.createContext({})
 const useCommandData = () => React.useContext(CommandData)
@@ -81,9 +78,9 @@ const CommandMenu = memo(({variant, variantStyle, variantKey}) => {
       'g r': () => router.push('/reading'),
       'g d': () => router.push('/design'),
       'g k': () => router.push('/keyboards'),
-      'g o': () => router.push('/mouses'),
       'g m': () => router.push('/music'),
       'g p': () => router.push('/projects'),
+      'g o': () => router.push('/about'),
       'g q': () => router.push('/quotes'),
       'g w': () => router.push('/words'),
       'g i': () => router.push('/ideas'),
@@ -104,8 +101,6 @@ const CommandMenu = memo(({variant, variantStyle, variantKey}) => {
 
     }, [keymap])
   }
-
-
 
   useEffect(() => {
     if (commandRef.current) {
@@ -249,7 +244,6 @@ const Group = ({ children, title }) => {
 const DefaultItems = () => {
   const router = useRouter()
   const { setPages, pages } = useCommandData()
-  const [copiedText, copy] = useCopyToClipboard()
 
   return (
     <>
@@ -265,6 +259,7 @@ const DefaultItems = () => {
 
       <Group title="Collection">
         <Item value="Keyboards" icon={<M6 />} keybind="g k" />
+        <Item value="About" icon={<Document />} keybind="g o" />
         <Item value="Reading" icon={<Book />} keybind="g r" />
       </Group>
 
