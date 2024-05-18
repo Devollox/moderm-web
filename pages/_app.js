@@ -18,13 +18,14 @@ Router.events.on('routeChangeError', () => {
 import '@styles/global.css'
 import { ThemeProvider } from 'next-themes'
 import Footer from '@components/footer'
+import Error from '@components/error'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider defaultTheme="system">
-      <Component {...pageProps} />
-      <Footer />
-    </ThemeProvider>
+      <ThemeProvider defaultTheme="system">
+        <Component {...pageProps} />
+        <Footer />
+      </ThemeProvider>
   )
 }
 export default MyApp
