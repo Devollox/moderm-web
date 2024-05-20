@@ -8,7 +8,7 @@ const Error = ({ status, children }) => {
   return (
     <Page title={status || 'Error'}>
       <Head>
-        <title>404 — Devollox</title>
+        <title>{status} — Devollox</title>
       </Head>
 
 
