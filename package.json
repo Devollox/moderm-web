@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "devollox",
   "version": "1.0.0",
   "scripts": {
     "lint": "eslint . && prettier --write '**/*.js' --loglevel warn",
