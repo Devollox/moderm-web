@@ -6,12 +6,8 @@ import getPosts from '@lib/get-posts'
 import generateRssFeed from '@lib/rss'
 import path from 'path'
 
-export const getStaticProps = async () => {
-  await getPosts()
-  await generateRssFeed()
-  const data = {}
-
-  return { props: { data } }
+export const getStaticProps = async () => { await getPosts();await generateRssFeed();const data = {};
+  return { props: { data }}
 }
 const About = () => {
 
@@ -32,7 +28,7 @@ const About = () => {
             <div>
               <h1>Devollox</h1>
               <p>
-                <strong>Front-end &amp; Technical <a href="/">semi-engineer</a></strong>
+                <strong>Front-end &amp; Technical <a href="/about">semi-engineer</a></strong>
                 <br />Obsessed with the Internet</p>
               <Command variantStyle=""
                        variantKey="false"
@@ -51,7 +47,6 @@ const About = () => {
         </div>
       </Page>
     </>
-
   )
 }
 
