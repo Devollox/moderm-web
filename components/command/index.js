@@ -74,7 +74,7 @@ const CommandMenu = memo(({variant, variantStyle, variantKey}) => {
       },
       'g b': () => router.push('/blog'),
       'g h': () => router.push('/'),
-      'g c': () => router.push('/contact'),
+      'g c': () => router.push('/computer'),
       'g r': () => router.push('/reading'),
       'g d': () => router.push('/design'),
       'g k': () => router.push('/keyboards'),
@@ -261,6 +261,7 @@ const DefaultItems = () => {
         <Item value="Keyboards" icon={<M6 />} keybind="g k" />
         <Item value="About" icon={<Document />} keybind="g o" />
         <Item value="Reading" icon={<Book />} keybind="g r" />
+        <Item value="Computer" icon={<Play/>} keybind="g c" />
       </Group>
 
       <Group title="Navigation">
