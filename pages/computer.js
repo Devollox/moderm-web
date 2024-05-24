@@ -1,5 +1,6 @@
 import Page from '@components/page'
 import getPosts from '@lib/get-posts'
+import Error from '@components/error'
 
 export const getStaticProps = () => { const posts = getPosts(); return { props: { posts } }}
 const Computer = () => {
