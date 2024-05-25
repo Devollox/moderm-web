@@ -5,6 +5,7 @@ import Command from '@components/command'
 import getPosts from '@lib/get-posts'
 import generateRssFeed from '@lib/rss'
 import path from 'path'
+import Bruteforce from '@components/bruteforce'
 
 export const getStaticProps = async () => { await getPosts();await generateRssFeed();const data = {};
   return { props: { data }}
@@ -18,6 +19,7 @@ const About = () => {
       }
     })
   }, [])
+  Bruteforce(20, "effect")
 
   return (
     <>
@@ -29,7 +31,9 @@ const About = () => {
               <h1>Devollox</h1>
               <p>
                 <strong>Front-end &amp; Technical <a href="/about">semi-engineer</a></strong>
-                <br />Obsessed with the Internet</p>
+                <br />
+                <abbr id="effect">Obsessed with the Internet</abbr>
+              </p>
               <Command variantStyle=""
                        variantKey="false"
                        variant={

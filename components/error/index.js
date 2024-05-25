@@ -1,10 +1,11 @@
 import Head from 'next/head'
-
 import Page from '@components/page'
-import Link from '@components/link'
 import styles from './error.module.css'
+import Bruteforce from '@components/bruteforce'
 
 const Error = ({ status, children }) => {
+  Bruteforce(25, "effects")
+
   return (
     <Page title={status || 'Error'}>
       <Head>
@@ -22,7 +23,7 @@ const Error = ({ status, children }) => {
               never existed.
             </p>
 
-            <footer>
+            <footer id="effects">
               — Aaron Swartz{' '}
             </footer>
           </blockquote>
@@ -36,7 +37,7 @@ const Error = ({ status, children }) => {
                   When I'm working on a task, I don't think about beauty. I only think about how to solve the problem. But when the finished solution doesn't look pretty, I know it's wrong.
                 </p>
 
-                <footer>
+                <footer id="effects">
                   — Buckminster Fuller{' '}
                 </footer>
               </blockquote>
@@ -48,6 +49,7 @@ const Error = ({ status, children }) => {
             </section>
         )
       }
+      <main>{children}</main>
     </Page>
   )
 }

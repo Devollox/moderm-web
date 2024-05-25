@@ -1,12 +1,15 @@
-import React, { memo } from 'react'
+import React, { memo, useLayoutEffect } from 'react'
 import Link from 'next/link'
-
 import styles from './header.module.css'
 import Command from '@components/command'
 import { Code } from 'lucide-react';
 import clsx from 'clsx';
+
 import { Command as CommandIcon } from '@components/icons'
+import Bruteforce from '@components/bruteforce'
 const Header = ({ title, content, variant}) => {
+  Bruteforce(25, "effect")
+
   return (
     <nav
          className={clsx(
@@ -29,7 +32,7 @@ const Header = ({ title, content, variant}) => {
 
                 <Command variantStyle="true" variantKey="true" variant={<CommandIcon />} />
 
-              {title && <div className={styles.content}>{title}</div>}
+              {title && <div id="effect" className={styles.content}>{title}</div>}
             </div>
     </nav>
   )
