@@ -1,7 +1,7 @@
-@import './syntax.css';
-@import './markdown.css';
-@import './nprogress.css';
-@import './inter.css';
+@import 'syntax';
+@import 'markdown';
+@import 'nprogress';
+@import 'inter';
 
 @tailwind base;
 @tailwind components;
@@ -236,10 +236,9 @@ kbd {
 button:hover {
     background-color: var(--gray-bg);
 
-kbd {
-    background-color: var(--kbd-bg);
-}
-
+    > kbd {
+        background-color: var(--kbd-bg);
+    }
 }
 
 summary {
