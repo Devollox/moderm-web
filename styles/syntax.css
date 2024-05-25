@@ -1,6 +1,6 @@
 .keyword {
-  font-weight: bold;
-  color: var(--keyword);
+    font-weight: bold;
+    color: var(--keyword);
 }
 
 .token.operator,
@@ -9,16 +9,16 @@
 .token.number,
 .token.builtin,
 .token.variable {
-  color: var(--token);
+    color: var(--token);
 }
 
 .token.comment {
-  color: var(--comment);
+    color: var(--comment);
 }
 
 .token.class-name,
 .token.function,
 .token.tag,
 .token.attr-name {
-  color: var(--name);
+    color: var(--name);
 }
