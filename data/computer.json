@@ -1,0 +1,66 @@
+{
+  "computer": [
+    {
+      "title": "Intel Xeon E5 2678 V3",
+      "description": "Oh this processor is Chinese."
+    },
+    {
+      "title": "Intel X99H",
+      "description": "Half of the RAM refuses to work."
+    },
+    {
+      "title": "Atermiter 16GB",
+      "description": "Is it possible to have 32GB - no, you can’t!."
+    },
+    {
+      "title": "Coolers Snowman",
+      "description": "Is there anything louder than this cooler?"
+    },
+    {
+      "title": "AeroCool ECO 550W",
+      "description": "Works almost like a transformer."
+    },
+    {
+      "title": "GIGABYTE GTX 1060 6GB",
+      "description": "People's video card."
+    },
+    {
+      "title": "512GB SSDM.2 Patriot P300",
+      "description": "I need more memory!"
+    },
+    {
+      "title": "Frame",
+      "description": "Took it from a homeless person."
+    }
+  ],
+  "desk": [
+    {
+      "title": "GIGABYTE G24F2 23.8\" FullHD Monitor",
+      "description": "I love the smoothness and black theme."
+    },
+    {
+      "title": "MSI PRO MP273A 27\" FullHD Monitor",
+      "description": "There are bugs."
+    }
+  ],
+  "keyboard": [
+    {
+      "title": "Fizz K617",
+      "description": "REDRAGON Fizz K617 White, chery red."
+    },
+    {
+      "title": "Lunacy In Space",
+      "description": "If anything I love astronomy."
+    }
+  ],
+  "coding": [
+    {
+      "title": "VSCode",
+      "description": "I moved to VSCode like everybody else."
+    },
+    {
+      "title": "WebStorm",
+      "description": "I end up sitting here :P."
+    }
+  ]
+}
