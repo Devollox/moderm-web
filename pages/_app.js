@@ -15,7 +15,7 @@ Router.events.on('routeChangeError', () => {
   nprogress.done()
 })
 
-import '@styles/global.css'
+import '@styles/global.scss'
 import { ThemeProvider } from 'next-themes'
 import Footer from '@components/footer'
 import Error from '@components/error'

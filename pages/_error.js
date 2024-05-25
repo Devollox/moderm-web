@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Error from '@components/error'
 
 class E extends React.Component {
