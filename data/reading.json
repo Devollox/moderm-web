@@ -1,18 +1,4 @@
 {
-  "schema": [
-    {
-      "name": "article",
-      "color": "blue"
-    },
-    {
-      "name": "blog",
-      "color": "red"
-    },
-    {
-      "name": "video",
-      "color": "indigo"
-    }
-  ],
   "data": [
     {
       "title": "Draw Bézier curve with React and SVG",
