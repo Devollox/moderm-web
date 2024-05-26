@@ -17,7 +17,7 @@ const Computer = () => {
                 title='Computer'
     >
       <h1>Tools. Apps. Gear.</h1>
-      <p style={{ margin: '20px 0 20px 0' }}>I often change my computer and peripheral <strong>configuration</strong>.
+      <p style={{ margin: '20px 0 20px 0'}}>I often change my computer and peripheral <strong>configuration</strong>.
         This is not a static page, it's a <strong>living document</strong> with everything that I'm using nowadays.</p>
       <List
         listTitle="Computer"
