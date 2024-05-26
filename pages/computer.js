@@ -7,12 +7,10 @@ import { desk as desk } from '@data/computer.json'
 import { computer as computer } from '@data/computer.json'
 import { keyboard as keyboard } from '@data/computer.json'
 import { coding as coding } from '@data/computer.json'
-import Bruteforce from '@components/bruteforce'
+import { apps as apps } from '@data/computer.json'
+import { services as services } from '@data/computer.json'
 
-export const getStaticProps = () => {
-  const posts = getPosts()
-  return { props: { posts } }
-}
+export const getStaticProps = () => {const posts = getPosts(); return { props: { posts } }}
 const Computer = () => {
   return (
     <Page description='My config computer.'
@@ -64,6 +62,32 @@ const Computer = () => {
         listTitle="Coding"
       >
         {coding.map(entry => {
+          return (
+            <ListIndex
+              url="/"
+              title={entry.title}
+              description={entry.description}
+            />
+          )
+        })}
+      </List>
+      <List
+        listTitle="Apps"
+      >
+        {apps.map(entry => {
+          return (
+            <ListIndex
+              url="/"
+              title={entry.title}
+              description={entry.description}
+            />
+          )
+        })}
+      </List>
+      <List
+        listTitle="Services"
+      >
+        {services.map(entry => {
           return (
             <ListIndex
               url="/"

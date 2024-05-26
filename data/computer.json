@@ -62,5 +62,53 @@
       "title": "WebStorm",
       "description": "I end up sitting here :P."
     }
+  ],
+  "apps": [
+    {
+      "title": "Adobe Photoshop",
+      "description": "I usually use it rarely, for creating illustrations."
+    },
+    {
+      "title": "VEGAS Pro",
+      "description": "Best editing apps."
+    },
+    {
+      "title": "Steam",
+      "description": "What else is needed for happiness?"
+    },
+    {
+      "title": "Discord",
+      "description": "Better than Skype."
+    },
+    {
+      "title": "Figma",
+      "description": "I never thought something would replace the Adobe suite for me. Figma did."
+    },
+    {
+      "title": "Wallpaper Engine",
+      "description": "Always black wallpaper."
+    }
+  ],
+  "services": [
+    {
+      "title": "Vercel",
+      "description": "Here is where I host all my websites. By far the best developer experience."
+    },
+    {
+      "title": "Firebase",
+      "description": "A no-brainer database and auth solution for side projects."
+    },
+    {
+      "title": "RegRU",
+      "description": "I buy and renew all my domains here."
+    },
+    {
+      "title": "Cloudflare",
+      "description": "The DNS service I use with all my domains. Amazing product."
+    },
+    {
+      "title": "Spotify",
+      "description": "I love listening to phonk while I'm writing code.."
+    }
   ]
 }
