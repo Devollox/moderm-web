@@ -43,14 +43,46 @@
       "description": "There are bugs."
     }
   ],
+  "mouse": [
+    {
+      "title": "Delux M800PRO",
+      "description": "The mouse breaks more than this site."
+    },
+    {
+      "title": "AJ390",
+      "description": "We are very good."
+    },
+    {
+      "title": "Razer Viper MINI",
+      "description": "Broke after a month :("
+    },
+    {
+      "title": "Glorious Model O Wireless",
+      "description": "My dream!"
+    }
+  ],
   "keyboard": [
     {
       "title": "Fizz K617",
-      "description": "REDRAGON Fizz K617 White, chery red."
+      "description": "My preferred wireless keyboard with a 65% compact layout."
     },
     {
       "title": "Lunacy In Space",
       "description": "If anything I love astronomy."
+    }
+  ],
+  "microphone": [
+    {
+      "title": "Fifine K688",
+      "description": "Chinese copy - Shure SM7B."
+    },
+    {
+      "title": "Fifine A8",
+      "description": "Well, this is top bang for your buck!"
+    },
+    {
+      "title": "Fifine K669",
+      "description": "Scary sound."
     }
   ],
   "coding": [

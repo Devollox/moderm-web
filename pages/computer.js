@@ -6,6 +6,8 @@ import ListIndex from '@components/list/list'
 import { desk as desk } from '@data/computer.json'
 import { computer as computer } from '@data/computer.json'
 import { keyboard as keyboard } from '@data/computer.json'
+import { mouse as mouse } from '@data/computer.json'
+import { microphone as microphone } from '@data/computer.json'
 import { coding as coding } from '@data/computer.json'
 import { apps as apps } from '@data/computer.json'
 import { services as services } from '@data/computer.json'
@@ -46,9 +48,35 @@ const Computer = () => {
         })}
       </List>
       <List
+        listTitle="Mouse"
+      >
+        {mouse.map(entry => {
+          return (
+            <ListIndex
+              url="/"
+              title={entry.title}
+              description={entry.description}
+            />
+          )
+        })}
+      </List>
+      <List
         listTitle="Keyboard"
       >
         {keyboard.map(entry => {
+          return (
+            <ListIndex
+              url="/"
+              title={entry.title}
+              description={entry.description}
+            />
+          )
+        })}
+      </List>
+      <List
+        listTitle="Microphone"
+      >
+        {microphone.map(entry => {
           return (
             <ListIndex
               url="/"
