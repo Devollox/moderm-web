@@ -100,7 +100,6 @@ body {
     -webkit-font-smoothing: antialiased;
     background: var(--bg);
     font-size: 16px;
-    background: var(--bg);
     color: var(--fg);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -116,15 +115,6 @@ body {
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-name: delay_donwload;
-}
-
-@keyframes delay_donwload {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 100%;
-    }
 }
 
 h1 {
