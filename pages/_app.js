@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import Router from 'next/router'
 import nprogress from 'nprogress'
 import debounce from 'lodash.debounce'
@@ -21,6 +21,13 @@ import Footer from '@components/footer'
 import Error from '@components/error'
 
 function MyApp({ Component, pageProps }) {
+  useLayoutEffect(() => {
+    document.addEventListener('keydown', function(event) {
+      if (event.ctrlKey && event.key === 'k') {
+        event.preventDefault()
+      }
+    })
+  }, [])
   return (
       <ThemeProvider defaultTheme="system">
         <Component {...pageProps} />

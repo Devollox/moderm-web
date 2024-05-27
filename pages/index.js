@@ -11,16 +11,7 @@ export const getStaticProps = async () => { await getPosts();await generateRssFe
   return { props: { data }}
 }
 const About = () => {
-
-  useLayoutEffect(() => {
-    document.addEventListener('keydown', function(event) {
-      if (event.ctrlKey && event.key === 'k') {
-        event.preventDefault()
-      }
-    })
-  }, [])
   Encoding(20, "effect")
-
   return (
     <>
       <Page
