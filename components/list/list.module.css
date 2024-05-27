@@ -1,12 +1,12 @@
 h2.title_block {
-    color: var(--colors-primary);
+    color: var(--fg);
     margin: 60px 0 0;
     font-size: 24px;
 }
 
 a.ul {
     border-bottom: .5px solid var(--colors-secondary);
-    color: var(--colors-primary);
+    color: var(--fg);
     text-decoration: none;
     transition: opacity var(--transitions-duration) ease-in-out;
 }
