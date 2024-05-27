@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Page from '@components/page'
 import styles from './error.module.css'
-import Bruteforce from '@components/bruteforce'
+import Encoding from 'components/encoding'
 
 const Error = ({ status, children }) => {
-  Bruteforce(25, "effects")
+  Encoding(25, "effects")
 
   return (
     <Page title={status || 'Error'}>

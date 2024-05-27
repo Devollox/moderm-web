@@ -1,6 +1,6 @@
 import { useLayoutEffect } from 'react'
 
-const BruteForce =  (intervalId, id) => {
+const Encoding =  (intervalId, id) => {
   useLayoutEffect(() => {
     const targetText = document.getElementById(`${id}`);
     if (targetText !== null) {
@@ -40,4 +40,4 @@ const BruteForce =  (intervalId, id) => {
   })
 }
 
-export default BruteForce
+export default Encoding

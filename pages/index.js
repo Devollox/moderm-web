@@ -5,7 +5,7 @@ import Command from '@components/command'
 import getPosts from '@lib/get-posts'
 import generateRssFeed from '@lib/rss'
 import path from 'path'
-import Bruteforce from '@components/bruteforce'
+import Encoding from 'components/encoding'
 
 export const getStaticProps = async () => { await getPosts();await generateRssFeed();const data = {};
   return { props: { data }}
@@ -19,7 +19,7 @@ const About = () => {
       }
     })
   }, [])
-  Bruteforce(20, "effect")
+  Encoding(20, "effect")
 
   return (
     <>

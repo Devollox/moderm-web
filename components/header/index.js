@@ -6,7 +6,7 @@ import { Code } from 'lucide-react';
 import clsx from 'clsx';
 
 import { Command as CommandIcon } from '@components/icons'
-import Bruteforce from '@components/bruteforce'
+import Bruteforce from 'components/encoding'
 const Header = ({ title, content, variant}) => {
   Bruteforce(25, "effect")
 
