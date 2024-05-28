@@ -113,10 +113,6 @@
       "description": "Better than Skype."
     },
     {
-      "title": "Figma",
-      "description": "I never thought something would replace the Adobe suite for me. Figma did."
-    },
-    {
       "title": "Wallpaper Engine",
       "description": "Always black wallpaper."
     }
@@ -129,6 +125,10 @@
     {
       "title": "Firebase",
       "description": "A no-brainer database and auth solution for side projects."
+    },
+    {
+      "title": "Figma",
+      "description": "I never thought something would replace the Adobe suite for me. Figma did."
     },
     {
       "title": "RegRU",
