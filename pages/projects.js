@@ -22,8 +22,7 @@ const Projects = () => {
         discontinued.</p>
       <h2 style={{ marginTop: '60px' }}>Featured Projects</h2>
       <WrapperWork>
-        <WorkEntry image={<Heart />} title='Modern' description='My personal website' number='2 Stars' />
-
+        <WorkEntry image={<Heart />} title='Modern' description='My personal website' number='2 Stars' href="https://github.com/Devollox/moderm-website"/>
       </WrapperWork>
       <h2 style={{ marginTop: '60px', marginBottom: '0'}}>All Projects</h2>
       <div>

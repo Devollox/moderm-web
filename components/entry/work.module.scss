@@ -16,11 +16,8 @@
 }
 
 @keyframes bg {
-    0% {
-        background-color: var(--bg);
-    }
     100% {
-        background-color: #212024;
+        background-color: var(--lighter-gray);
     }
 }
 
@@ -48,7 +45,7 @@
 }
 
 .title_work {
-    color: var(--colors-primary);
+    color: var(--fg);
     margin: 0px;
     font-size: 18px;
 }
@@ -61,7 +58,7 @@
 
 .number {
     margin: 5px 0px 0px;
-    color: var(--colors-primary);
+    color: var(--fg);
     text-transform: uppercase;
     display: inline-block;
     font-weight: 500;

@@ -1,4 +1,4 @@
-import styles from '@components/entry/work.module.css'
+import styles from '@components/entry/work.module.scss'
 
 const WrappperWork = ({ children }) => {
   return (
