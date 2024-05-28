@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer'
 import 'intersection-observer'
 
 import styles from './entry.module.css'
+import Image from 'next/image'
 const imagePrefix = `https://res.cloudinary.com/dsdlhtnpw/image/fetch/q_60,w_1000`
 
 const Entry = ({ title, description, image, href, position }) => {
@@ -35,5 +36,4 @@ const Entry = ({ title, description, image, href, position }) => {
     </a>
   )
 }
-
 export default Entry
