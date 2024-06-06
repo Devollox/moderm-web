@@ -1,7 +1,8 @@
 import React, { useLayoutEffect } from 'react'
+
+import debounce from 'lodash.debounce'
 import Router from 'next/router'
 import nprogress from 'nprogress'
-import debounce from 'lodash.debounce'
 
 const start = debounce(nprogress.start, 500)
 Router.events.on('routeChangeStart', start)

@@ -1,10 +1,10 @@
 import styles from '@components/entry/work.module.scss'
 
-const WrappperWork = ({ children }) => {
+const WrapperWork = ({ children }) => {
   return (
     <div className={styles.wrapper}>
       {children}
     </div>
   )
 }
-export default WrappperWork
+export default WrapperWork

@@ -2,7 +2,12 @@ import styles from '@components/entry/work.module.scss'
 
 const WorkEntry = ({ title, description, image, href, position, number }) => {
   return (
-    <a href={href} target="_blank" className={styles.link_work}>
+    <a
+       href={href}
+       target="_blank"
+       className={styles.link_work}
+       title={`${title} - ${description}`}
+    >
       <span className={styles.span}>
         <div className={styles.image_work}>
           <div className={styles.image_work_} style={{color: 'var(--fg)'}}>{image}</div>

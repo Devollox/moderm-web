@@ -1,11 +1,12 @@
-import Page from 'components/home'
 import styles from '@components/home/page.module.css'
-import React, { useLayoutEffect } from 'react'
-import Command from '@components/command'
+import React from 'react'
+
+import Page from 'components/home'
 import getPosts from '@lib/get-posts'
 import generateRssFeed from '@lib/rss'
-import path from 'path'
 import Encoding from 'components/encoding'
+import Command from '@components/command'
+import path from 'path'
 
 export const getStaticProps = async () => { await getPosts();await generateRssFeed();const data = {};
   return { props: { data }}
