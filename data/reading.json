@@ -1,15 +1,77 @@
 {
-  "data": [
+  "other" : [
     {
-      "title": "Draw Bézier curve with React and SVG",
-      "description": "How to Draw S-Curved Arrows Between Boxes / Rectangles.",
-      "url": "https://dragonman225.js.org/curved-arrows.html",
-      "key": "blog"
+      "title": "Tasks and exercises\nin assembly language MASM",
+      "href": "https://al.cs.msu.ru/system/files/MASM2020.pdf"
+    }
+  ],
+  "book" : [
+    {
+      "title": "Aurora",
+      "description": "Kim Stanley Robinson",
+      "hours": "9-12",
+      "progress": "67%",
+      "image": "https://bookbars.ru/upload/iblock/c90/c90fce49b2657a3b20df5bd8c65047c2.jpg"
     },
     {
-      "title": "MASM Assembly Language",
-      "description": "MASM Assembly Language Task and Exercises.",
-      "url": "https://al.cs.msu.ru/system/files/MASM2020.pdf",
-      "key": "pdf"
+      "title": "Cosmos: Possible Worlds",
+      "description": "Ann Druyan",
+      "hours": "10-12",
+      "progress": "84%",
+      "image": "https://cdn.respublica.ru/uploads/01/00/00/dn/dr/dc74fe239a09b7c4.jpg?1582881368"
+    },
+    {
+      "title": "Brief History of Time",
+      "description": "Stephen Hawking",
+      "hours": "6-8",
+      "progress": "25%",
+      "image": "https://cdn.respublica.ru/uploads/01/00/00/63/r5/848fa9356c390d5d.jpg?1521021386"
+    },
+    {
+      "title": "The Martian",
+      "description": "Andy Weir",
+      "hours": "8-10",
+      "progress": "100%",
+      "image": "https://cdn.respublica.ru/uploads/01/00/00/ar/uz/1eac94f4c6db97c4.jpg?1544131561"
+    },
+    {
+      "title": "A Brief History of Time",
+      "description": "Stephen Hawking",
+      "hours": "8-10",
+      "progress": "49%",
+      "image": "https://img4.labirint.ru/rc/915933252784fd803a3ab1c3ecc3442b/363x561q80/books60/597534/cover.jpg?1564031861"
+    },
+    {
+      "title": "The Universe in a Nutshell",
+      "description": "Stephen Hawking",
+      "hours": "5-7",
+      "progress": "100%",
+      "image": "https://cdn.respublica.ru/uploads/01/00/00/5x/7r/0a8d272193013e24.jpg?1510910166"
+    },
+    {
+      "title": "Pale Blue Dot: A Vision of the Human Future in Space",
+      "description": "Carl Sagan",
+      "hours": "8-10",
+      "progress": "100%",
+      "image": "https://shop.polytech.one/upload/iblock/abf/241z8d91hx5ysi6fgksns620w81ymfp3.jpg"
     }
-  ]}
+  ],
+  "video" : [
+    {
+      "title": "C++ Full Course",
+      "href": "https://www.youtube.com/watch?v=-TkoO8Z07hI&ab_channel=BroCode"
+    },
+    {
+      "title": "Will tomorrow come?\n",
+      "href": "https://www.youtube.com/watch?v=vCrI3plIv40&t=390s&ab_channel=ALI"
+    },
+    {
+      "title": "WHAT destroys ALL civilizations in space?",
+      "href": "https://www.youtube.com/watch?v=tvzfEA75CRQ&t=968s&ab_channel=ALI"
+    },
+    {
+      "title": "The death of the universe will touch you",
+      "href": "https://www.youtube.com/watch?v=pCm-5ijY1M0&t=38s&ab_channel=ALI"
+    }
+  ]
+}
