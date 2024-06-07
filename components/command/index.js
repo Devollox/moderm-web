@@ -33,6 +33,7 @@ import {
   GitHub,
   Twitter, Mic, Play
 } from '@components/icons'
+import { ReceiptRussianRuble, Wallet } from 'lucide-react'
 import styles from './command.module.css'
 import headerStyles from '@components/header/header.module.css'
 import { useTheme } from 'next-themes'
@@ -75,6 +76,7 @@ const CommandMenu = memo(({variant, variantStyle, variantKey}) => {
       },
       'g b': () => router.push('/blog'),
       'g h': () => router.push('/'),
+      'g i': () => router.push('/investing'),
       'g c': () => router.push('/computer'),
       'g r': () => router.push('/reading'),
       'g d': () => router.push('/design'),
@@ -84,7 +86,6 @@ const CommandMenu = memo(({variant, variantStyle, variantKey}) => {
       'g o': () => router.push('/about'),
       'g q': () => router.push('/quotes'),
       'g w': () => router.push('/words'),
-      'g i': () => router.push('/ideas'),
       'g t': () => () =>
         window.open('', '_blank')
     }
@@ -263,6 +264,7 @@ const DefaultItems = () => {
         <Item value="Reading" icon={<Book />} keybind="g r" />
         <Item value="Projects" icon={<Document />} keybind="g p" />
         <Item value="Computer" icon={<Play/>} keybind="g c" />
+        <Item value="Investing" icon={<ReceiptRussianRuble/>} keybind="g i" />
       </Group>
 
       <Group title="Navigation">
