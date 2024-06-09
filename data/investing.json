@@ -1,0 +1,44 @@
+{
+  "sell": [
+    {
+      "image": "microphone",
+      "title": "Fifine A8",
+      "description": "Microphone Fifine A8",
+      "sell": "19"
+    },
+    {
+      "image": "mouse",
+      "title": "G Pro",
+      "description": "Logitech G PRO X SUPERLIGHT",
+      "sell": "2"
+    },
+    {
+      "image": "microphone",
+      "title": "Fifine AM8",
+      "description": "Microphone Fifine AM8",
+      "sell": "8"
+    },
+    {
+      "image": "monitor",
+      "title": "G24F 2",
+      "description": "Monitor GIGABYTE G24F",
+      "sell": "4"
+    },
+    {
+      "image": "cpu",
+      "title": "I5-12400F",
+      "description": "Intel Core i5-12400F",
+      "sell": "1"
+    }
+  ],
+  "videocard" : [
+    {
+      "title": "NVIDIA GeForce GTX 1060 6GB",
+      "mh": "22.35"
+    },
+    {
+      "title": "MSI AMD Radeon RX 550 AERO 8GB",
+      "mh": "11.97"
+    }
+  ]
+}
