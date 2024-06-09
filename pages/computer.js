@@ -31,6 +31,7 @@ const Computer = () => {
         {computer.map(entry => {
           return (
             <ListIndex
+              selection="-"
               url="/"
               title={entry.title}
               description={entry.description}
@@ -44,6 +45,7 @@ const Computer = () => {
         {desk.map(entry => {
           return (
             <ListIndex
+              selection="-"
               url="/"
               title={entry.title}
               description={entry.description}
@@ -57,6 +59,7 @@ const Computer = () => {
         {mouse.map(entry => {
           return (
             <ListIndex
+              selection="-"
               url="/"
               title={entry.title}
               description={entry.description}
@@ -70,6 +73,7 @@ const Computer = () => {
         {keyboard.map(entry => {
           return (
             <ListIndex
+              selection="-"
               url="/"
               title={entry.title}
               description={entry.description}
@@ -83,6 +87,7 @@ const Computer = () => {
         {microphone.map(entry => {
           return (
             <ListIndex
+              selection="-"
               url="/"
               title={entry.title}
               description={entry.description}
@@ -96,6 +101,7 @@ const Computer = () => {
         {coding.map(entry => {
           return (
             <ListIndex
+              selection="-"
               url="/"
               title={entry.title}
               description={entry.description}
@@ -109,6 +115,7 @@ const Computer = () => {
         {apps.map(entry => {
           return (
             <ListIndex
+              selection="-"
               url="/"
               title={entry.title}
               description={entry.description}
@@ -122,6 +129,7 @@ const Computer = () => {
         {services.map(entry => {
           return (
             <ListIndex
+              selection="-"
               url="/"
               title={entry.title}
               description={entry.description}

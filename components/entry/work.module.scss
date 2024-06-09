@@ -1,6 +1,5 @@
 .link_work {
     padding: 30px 20px 30px 20px;
-    display: flex;
     transition: opacity 2s ease-in-out;
     border: 0px;
     width: 100%;
@@ -24,7 +23,6 @@
 .span {
     position: relative;
     width: 100%;
-    height: 131px;
 }
 
 .image_work {
@@ -69,11 +67,15 @@
 .wrapper {
     font-family: Biotif, sans-serif;
     margin: 10px 0px 0px -20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media (max-width: 760px) {
     .wrapper {
-        flex-flow: column wrap;
+        grid-template-columns: 1fr;
+    }
+    .link_work {
+        padding: 30px 20px 30px 20px;
     }
 }

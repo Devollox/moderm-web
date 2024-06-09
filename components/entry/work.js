@@ -1,6 +1,7 @@
 import styles from '@components/entry/work.module.scss'
+import Image from 'next/image'
 
-const WorkEntry = ({ title, description, image, href, position, number }) => {
+const WorkEntry = ({ title, underTitle, children, description, image, href, margin, number }) => {
   return (
     <a
        href={href}
@@ -8,14 +9,14 @@ const WorkEntry = ({ title, description, image, href, position, number }) => {
        className={styles.link_work}
        title={`${title} - ${description}`}
     >
-      <span className={styles.span}>
+      <span className={styles.span} style={{height: '130px', marginBottom: `${margin}`}}>
         <div className={styles.image_work}>
           <div className={styles.image_work_} style={{color: 'var(--fg)'}}>{image}</div>
         </div>
         <div className={styles.wrapper_work}>
-          <p className={styles.title_work}>{title}</p>
-          <p className={styles.description_work}>{description}</p><p
-          className={styles.number}>{number}</p>
+          <p className={styles.title_work}>{title} <abbr className={styles.description_work}>{underTitle}</abbr></p>
+          <p className={styles.description_work}>{description}</p>
+          {children}
         </div>
       </span>
     </a>

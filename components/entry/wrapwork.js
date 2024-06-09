@@ -1,8 +1,8 @@
 import styles from '@components/entry/work.module.scss'
 
-const WrapperWork = ({ children }) => {
+const WrapperWork = ({ children, gridColumns, gridCRows }) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} style={{gridTemplateColumns: `${gridColumns}`, gridTemplateRows: `${gridCRows}`}}>
       {children}
     </div>
   )

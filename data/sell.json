@@ -1,0 +1,30 @@
+{
+  "sell": [
+    {
+      "title": "FIFINE A8",
+      "description": "Microphone Fifine A8",
+      "sell": "19 sales"
+    },
+    {
+      "title": "G PRO X SUPERLIGHT",
+      "description": "Wireless mouse Logitech G PRO X SUPERLIGHT",
+      "sell": "2 sales"
+    },
+    {
+      "title": "FIFINE AM8",
+      "description": "Microphone Fifine A8",
+      "sell": "19 sales"
+    },
+    {
+      "title": "GIGABYTE G24F 2",
+      "description": "Monitor GIGABYTE G24F 2",
+      "sell": "19 sales"
+    }
+  ],
+  "videocard" : [
+    {
+      "title": "NVIDIA GeForce GTX 1060 6GB",
+      "mh": "10"
+    }
+  ]
+}
