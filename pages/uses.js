@@ -18,7 +18,7 @@ import { services as services } from '@data/computer.json'
 export const getStaticProps = () => {const posts = getPosts(); return { props: { posts } }}
 const Uses = () => {
   return (
-    <Page description='My config computer.'
+    <Page description='My config uses.'
                 title='Uses'
     >
       <Information title="Tools. Apps. Gear.">
@@ -26,7 +26,7 @@ const Uses = () => {
         This is not a static page, it's a <strong>living document</strong> with everything that I'm using nowadays.
       </Information>
       <List
-        listTitle="Uses"
+        listTitle="Computer"
       >
         {computer.map(entry => {
           return (
