@@ -35,7 +35,7 @@ const About = () => {
           />
           <ListIndex
             selection="-"
-            title="Computer Repair"
+            title="Uses Repair"
             description="I rarely do this, but it's so interesting and very exciting"
           />
           <ListIndex
