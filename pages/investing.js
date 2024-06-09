@@ -16,7 +16,7 @@ import ListIndex from '@components/list/list'
 export const getStaticProps = () => { const posts = getPosts(); return { props: { posts } }}
 
 const About = () => {
-  let totalMH = videocard.reduce((total, card) => total + parseInt(card.mh), 0);
+  let totalMH = videocard.reduce((total, card) => total + parseFloat(card.mh), 0);
   return (
     <Page
       title="Investing"
