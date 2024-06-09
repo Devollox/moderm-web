@@ -77,7 +77,7 @@ const CommandMenu = memo(({variant, variantStyle, variantKey}) => {
       'g b': () => router.push('/blog'),
       'g h': () => router.push('/'),
       'g i': () => router.push('/investing'),
-      'g c': () => router.push('/computer'),
+      'g c': () => router.push('/uses'),
       'g r': () => router.push('/reading'),
       'g d': () => router.push('/design'),
       'g k': () => router.push('/keyboards'),
