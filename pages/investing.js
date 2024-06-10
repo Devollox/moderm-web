@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react'
+import React from 'react'
 import styles from '@components/entry/work.module.scss'
 
 import getPosts from '@lib/get-posts'
@@ -9,23 +9,19 @@ import WorkEntry from '@components/entry/work'
 import ListIndex from '@components/list/list'
 import SellImage from '@components/entry/sell'
 
-import { Heart, Mouse, AppWindowMac, Mic, Monitor, Cpu } from 'lucide-react'
-import { videocard as videocard } from "@data/investing.json"
-import { sell as sell } from "@data/investing.json"
-
-
+import { AppWindowMac } from 'lucide-react'
+import { sell as sell, videocard as videocard } from '@data/investing.json'
 
 export const getStaticProps = () => { const posts = getPosts(); return { props: { posts } }}
 
 const About = () => {
-  let totalMH = videocard.reduce((total, card) => total + parseFloat(card.mh), 0);
   return (
     <Page
       title="Investing"
       description="Where do I work"
     >
       <Information title="DevTools. B2B. SaaS.">
-        I mainly get my money through selling various goods on <strong>Avito</strong>. Sometimes I switch to normal work. I'm thinking of building a <strong>mining farm</strong> - {totalMH} Mh/s.
+        I mainly get my money through selling various goods on <strong>marketplace</strong> - {sell.reduce((total, card) => total + parseFloat(card.sell), 0)} sales. Sometimes I switch to normal work. I'm thinking of building a <strong>mining farm</strong> - {videocard.reduce((total, card) => total + parseFloat(card.mh), 0)} Mh/s.
       </Information>
       <h2 style={{ marginTop: '60px', marginBottom: '0'}}>Who took my money</h2>
       <p>I love doing this...</p>

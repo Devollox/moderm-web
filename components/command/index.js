@@ -249,15 +249,15 @@ const DefaultItems = () => {
 
   return (
     <>
-      <Group title="Blog">
-        <Item value="Blog" icon={<Pencil />} keybind="g b" />
-        <Item
-          value="Search blog..."
-          icon={<Search />}
-          closeOnCallback={false}
-          callback={() => setPages([...pages, BlogItems])}
-        />
-      </Group>
+      {/*<Group title="Blog">*/}
+      {/*  <Item value="Blog" icon={<Pencil />} keybind="g b" />*/}
+      {/*  <Item*/}
+      {/*    value="Search blog..."*/}
+      {/*    icon={<Search />}*/}
+      {/*    closeOnCallback={false}*/}
+      {/*    callback={() => setPages([...pages, BlogItems])}*/}
+      {/*  />*/}
+      {/*</Group>*/}
 
       <Group title="Collection">
         <Item value="About" icon={<Design />} keybind="g o" />
