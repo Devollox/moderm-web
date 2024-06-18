@@ -15,7 +15,6 @@ export const getStaticProps = () => {
   return { props: { posts } }
 }
 const Reading = () => {
-
   return (
     <Page
       title='Reading'

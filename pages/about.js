@@ -6,11 +6,7 @@ import Error from '@components/error'
 export const getStaticProps = () => { const posts = getPosts(); return { props: { posts } }}
 
 const About = () => {
-  return (
-    <Error status={400}>
-
-    </Error>
-  )
+  return <Error status={400} />
 }
 
 export default About

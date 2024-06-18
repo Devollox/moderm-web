@@ -19,7 +19,6 @@ Router.events.on('routeChangeError', () => {
 import '@styles/global.scss'
 import { ThemeProvider } from 'next-themes'
 import Footer from '@components/footer'
-import Error from '@components/error'
 
 function MyApp({ Component, pageProps }) {
   useLayoutEffect(() => {

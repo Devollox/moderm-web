@@ -15,9 +15,6 @@ export const getStaticProps = () => {
   return { props: { posts } }
 }
 const Projects = () => {
-
-
-
   return (
     <Page
       description='My projects.'
