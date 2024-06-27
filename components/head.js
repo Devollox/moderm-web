@@ -75,13 +75,13 @@ const Head = ({
           <link
             rel="alternate icon"
             type="image/png"
-            href="/favicons/favicon.ico"
+            href="/favicons/white-fav.png"
             key="dynamic-favicon-alternate"
           />
           <link
             rel="icon"
             type="image/svg+xml"
-            href="/favicons/favicon.ico"
+            href="/favicons/white-fav.png"
             key="dynamic-favicon"
           />
         </>
@@ -90,13 +90,13 @@ const Head = ({
           <link
             rel="alternate icon"
             type="image/png"
-            href="/favicons/favicon.ico"
+            href="/favicons/dark-fav.png"
             key="dynamic-favicon-alternate"
           />
           <link
             rel="icon"
             type="image/svg+xml"
-            href="/favicons/favicon.ico"
+            href="/favicons/dark-fav.png"
             key="dynamic-favicon"
           />
         </>
