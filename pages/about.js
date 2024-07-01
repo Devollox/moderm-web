@@ -16,7 +16,7 @@ export const getStaticProps = () => {
   return { props: { posts } }
 }
 
-const About = async () => {
+const About = () => {
   const [copiedText, copy] = useCopyToClipboard()
   const { systemTheme } = useTheme()
 
