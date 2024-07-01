@@ -1,0 +1,23 @@
+.image {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.btn {
+    appearance: none;
+    background: transparent;
+    border: 0px;
+    border-radius: var(--radii-borderRadius);
+    color: var(--fg);
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0px 0px 0px -10px;
+    outline: 0px;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: background var(--transitions-duration) ease-in-out, color var(--transitions-duration) ease-in-out;
+}
