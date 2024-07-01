@@ -1,0 +1,21 @@
+{
+  "career": [
+    {
+      "title": "Front-end & Back-end",
+      "organization": "Freelancing",
+      "link": "/",
+      "city": "Ivanovo, Russia",
+      "startDate": "Jan 2023",
+      "endDate": "Present"
+    },
+    {
+      "title": "Machine operator",
+      "organization": "Factory",
+      "link": "/",
+      "city": "Ivanovo, Russia",
+      "startDate": "June 2022",
+      "endDate": "July 2022"
+    }
+  ]
+}
+
