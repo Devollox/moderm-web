@@ -78,7 +78,7 @@ const About = () => {
         <a
           download=""
           role="button"
-          href={`http://localhost:3000/favicons/${!systemTheme || systemTheme === 'dark' ? 'white-fav.png' : 'dark-fav.png'}`}
+          href={`https://www.devolllox.fun/favicons/${!systemTheme || systemTheme === 'dark' ? 'white-fav.png' : 'dark-fav.png'}`}
           style={{ textDecoration: 'none' }}
         >
           <HoverButton image={<ImageDown height={24} width={24} />} title="Download Headshot" />
