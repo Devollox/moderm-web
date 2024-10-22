@@ -63,6 +63,10 @@ const Projects = () => {
       <div>
         <h3>2024</h3>
         <ListIndex
+          url="https://github.com/Devollox/glshop"
+          title="GlShop"
+        />
+        <ListIndex
           url="https://github.com/chronark/chronark.com"
           title="Chronark"
         />
