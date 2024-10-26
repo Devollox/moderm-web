@@ -1,5 +1,5 @@
 <h1 align="center" >
-     <a><a href="https://devollox.fun/">Modern Website</a> ←<a> click</a></a>
+     <a><a href="https://devollox.xyz/">Modern Website</a> ←<a> click</a></a>
 </h1>
 
 This is my portfolio website, proudly built with [Next.js](https://nextjs.org/). It uses the [pnpm](https://pnpm.io/) package manager by default, but can be used with `npm` or `yarn` as well.
